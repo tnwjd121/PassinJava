@@ -42,7 +42,11 @@ public class HashMapClass {
 //			String key = kItr.next();
 			System.out.println(map.get(kItr.next()));
 			
+			
 		}
+		// 요소 삭제 - remove(키)
+		map.remove("홍길동");
+		System.out.println("총 요소 수: " + map.size());
 		
 		
 	}

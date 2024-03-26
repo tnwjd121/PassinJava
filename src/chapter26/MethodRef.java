@@ -17,16 +17,22 @@ public class MethodRef {
 		List<Integer> ls = Arrays.asList(1, 3, 5, 6, 9);
 		ls = new ArrayList<Integer>(ls);
 		
-		Collections.reverse(ls);
-		for(int i: ls) {
-			System.out.println(i);
-		}
+//		Collections.reverse(ls);
+//		for(int i: ls) {
+//			System.out.println(i);
+//		}
 		
 		// 추상 메소드 한개 가지고 있는 인터페이스 4가지
 		// 그중 1 Consumer<T> void accept(T t)
 		// 컬렉션 프레임워크 - Collections 클래스 다양한 기능을 하는 메소드
 		// reverse()메소드, 컬렉션의 순서를 뒤집는 기능을 하는 메소드
-		Consumer<List<Integer>> c=l-> Collections.reverse(l);  
+//		Consumer<List<Integer>> c=l-> Collections.reverse(l);
+		//static 메소드 참조
+		// 전달되는 인자를 static 메소드를 호출하면서 그대로 전달할 경우
+		Consumer<List<Integer>> c=Collections::reverse;
+		c.accept(ls);
+		System.out.println(ls);
+		
 		
 	}
 }

@@ -11,7 +11,8 @@ public class OptionalUse {
 		Optional<String> os2 = Optional.ofNullable(new String("Toy2"));
 		// 일종의 래퍼 클래스
 		
-		//ispresent() - null인지 아닌지 판별 메소드
+		// ispresent() - null인지 아닌지 판별 메소드
+		// get () -> 감쌌던 인스턴스를 반환하는 메소드
 		if(os1.isPresent()) {
 			System.out.println(os1.get());
 		}

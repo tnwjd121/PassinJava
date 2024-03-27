@@ -4,19 +4,19 @@ package chapter27;
 public class ContInfo {
 	
 	private String phone;
-	private String adrs;
+	private String addr;
 	
-	public ContInfo(String phone, String adrs) {
+	public ContInfo(String phone, String addr) {
 		this.phone = phone;
-		this.adrs = adrs;
+		this.addr = addr;
 	}
 
 	public String getPhone() {
 		return phone;
 	}
 
-	public String getAdrs() {
-		return adrs;
+	public String getAddr() {
+		return addr;
 	}
 	
 

@@ -12,7 +12,7 @@ public class ShowCompAddr {
 			if(com!=null) {
 				ContInfo info = com.getcInfo();
 				if(info!=null) //회사 주소가 없을 수도 있다
-					addr=info.getAdrs();
+					addr=info.getAddr();
 			}
 		}
 		// 위으 코드에서 주소 정보를 얻지 못했을 수 있다

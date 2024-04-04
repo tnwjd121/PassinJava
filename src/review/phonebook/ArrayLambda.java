@@ -13,7 +13,8 @@ public class ArrayLambda {
 		iArr.forEach(v -> {
 			System.out.println(v);
 		});
-		//스트림 - 컬렉션에 여러 이러한 람다식을 쓸 수 있는 기능들의 집합ㄴ
+		//스트림 - 컬렉션에 여러 이러한 람다식을 쓸 수 있는 기능들의 집합
+		
 	}
 
 }
